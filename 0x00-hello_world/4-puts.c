@@ -1,14 +1,11 @@
-/* this is a new file */
 #include <stdio.h>
+
 /**
- * this is the main function
+ *main - Entry point
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	char str[] = "\"Programming is like building a multilingual puzzle";
-	puts(str);
-/**
- * Return: 0 if there is no error.
- */
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
