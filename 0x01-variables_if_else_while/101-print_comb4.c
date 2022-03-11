@@ -5,15 +5,17 @@
  */
 int main(void)
 {
-	int i, j;
+	int i, j, m;
 
 	for (i = 0; i <= 9 ; i++)
 	{
 		for (j = 1; j <= 9 ; j++)
 		{
-			if (i != j)
+			for (m = 2; m <= 9 ; m++)
 			{
-				int k = i * 10 + j;
+			if (i != j && i != m && j != m)
+			{
+				int k = i * 10 + i;
 				int l = j * 10 + i;
 
 				if (k < l)
@@ -26,6 +28,7 @@ int main(void)
 						putchar(32);
 					}
 				}
+			}
 			}
 		}
 	}
