@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char alpha, capAlpha;	
+	char alpha, capAlpha;
 
 	alpha = 'a';
 	capAlpha = 'A';
