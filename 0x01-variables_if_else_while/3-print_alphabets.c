@@ -4,8 +4,9 @@
  * Return: 0(Success)
  */
 int main(void)
-{	
+{
 	char alpha, capAlpha;	
+
 	alpha = 'a';
 	capAlpha = 'A';
 	while (alpha <= 'z')
