@@ -19,10 +19,12 @@ int main(void)
 				{
 					putchar(i+48);
 					putchar(j+48);
-					putchar(44);
-					putchar(32);
+					if (k < 80 || l < 80)
+					{
+						putchar(44);
+						putchar(32);
+					}
 				}
-
 			}
 		}
 	}
