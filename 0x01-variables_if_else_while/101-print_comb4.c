@@ -15,14 +15,19 @@ int main(void)
 			{
 			if (i != j && i != m && j != m)
 			{
-				int k = i * 10 + i;
-				int l = j * 10 + i;
+				int k = i * 100 + j * 10 + m;
+				int l = j * 100 + i * 10 + m;
+				int o = i * 100 + m * 10 + j;
+				int p = j * 100 + m * 10 + i;
+				int q = m * 100 + j * 10 + i;
+				int r = m * 100 + i * 10 + j;
 
-				if (k < l)
+				if (k < l && k < o && k < p && k < q && k < r)
 				{
 					putchar(i + 48);
 					putchar(j + 48);
-					if (k < 80 || l < 80)
+					putchar(m + 48);
+					if (k < 700 || l < 700)
 					{
 						putchar(44);
 						putchar(32);
