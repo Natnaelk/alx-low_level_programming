@@ -10,8 +10,11 @@ int main(void)
 	while (a < 10)
 	{
 		putchar(48 + a);
+		if (a < 9)
+		{
 		putchar(44);
 		putchar(32);
+		}
 		a++;
 	}
 	putchar('\n');
