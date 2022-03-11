@@ -18,7 +18,7 @@ int main(void)
 
 				if (k < l)
 				{
-					putchar( i + 48);
+					putchar(i + 48);
 					putchar(j + 48);
 					if (k < 80 || l < 80)
 					{
