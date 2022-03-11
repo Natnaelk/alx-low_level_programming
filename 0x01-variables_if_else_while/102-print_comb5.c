@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *  * main - main block
- *   * Description: Write a program that prints all possible
- *    * different combinations of two digits
- *     * Return: 0
- *      */
+ * main - main block
+ * Description: Write a program that prints all possible
+ * different combinations of two digits
+ * Return: 0
+ */
 int main(void)
-{	
+{
 	int i, j;
 	int a, b, c, d;
 
@@ -26,7 +26,7 @@ int main(void)
 				putchar(32);
 				putchar(c + '0');
 				putchar(d + '0');
-				if ( !(a ==9 && b == 8))
+				if (!(a == 9 && b == 8))
 				{
 					putchar(44);
 					putchar(32);
