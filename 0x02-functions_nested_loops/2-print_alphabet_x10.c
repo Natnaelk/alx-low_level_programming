@@ -14,7 +14,7 @@ void print_alphabet_x10(void)
 		
 		while (alp < 26)
 		{
-			_putchar(alp+97);
+			_putchar(alp + 97);
 			alp++;
 		}
 		i++;
