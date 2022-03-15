@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - Entry Point
- * @c - checking alphabet or not
+ * @c : checking alphabet or not
  * Return: 0 or 1
  *
  */
