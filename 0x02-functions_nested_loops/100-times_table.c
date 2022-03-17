@@ -2,13 +2,14 @@
 
 /**
  * print_times_table - Entry Point
- *
- * Return:0
+ * @n : times table to use
+ * Return:void
  */
 void print_times_table(int n)
 {
 	int i;
 	int j;
+	int result;
 
 	if (n > 15 || n < 0)
 	{
@@ -18,8 +19,6 @@ void print_times_table(int n)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			int result;
-			
 			result = i * j;
 			if (j == 0)
 				_putchar('0' + result);
