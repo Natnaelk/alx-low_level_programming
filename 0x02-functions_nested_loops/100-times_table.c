@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_times_table - Entry Point
  * @n : times table to use
