@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry Point
- * Retun:void
+ * Return: void.
  */
 int main(void)
 {
