@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
  * main - Entry Point
- * Retun:0
+ * Retun:void
  */
 int main(void)
-{	
+{
 	int i;
-	
+
 	i = 1;
 	while (i <= 100)
 	{
