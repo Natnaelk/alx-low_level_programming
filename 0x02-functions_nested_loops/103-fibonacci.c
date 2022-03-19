@@ -5,25 +5,21 @@
  */
 int main(void)
 {
-	int i;
-	long num1, num2, num3, sum;
+	long num1, num2, next, sum;
 
 	num1 = 0;
 	num2 = 1;
-	while ( i < num2)
+	next = 0;
+	sum = 0;
+	while (next < 4000000)
 	{
-		num3 = num1 + num2;
+		next= num1 + num2;
 		num1 = num2;
-		num2 = num3;
-		if (num1 > 400000)
+		num2 = next;
+		if (next % 2 == 0)
 		{
-			i = num1;
+			sum += next;
 		}
-		if (num1 % 2 == 0 && num1 <= 4000000)
-		{
-			sum += num1;
-		}
-		i++;
 	}
 	printf("%ld", sum);
 	printf("\n");
