@@ -4,17 +4,25 @@
  * @s : the reversed string
  * Retrun:void
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-	int i = 0;
-	int j = 0;
 
-	while (s[i])
+int len, i, half;
+char temp;
+
+for (len = 0; s[len] != '\0'; len++)
+;
+
+i = 0;
+
+half = len / 2;
+
+while (half--)
+{
+	temp = s[len - i - 1];
+	s[len - i - 1] = s[i];
+	s[i] = temp;
 	i++;
-	while (i--)
-	{
-		s[i] = s[j];
-		j++;
-	}
+}
 
 }
