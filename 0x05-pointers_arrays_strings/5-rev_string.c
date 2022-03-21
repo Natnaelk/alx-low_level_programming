@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rev - Entry Point
+ * rev_string - Entry Point
  * @s : the reversed string
  * Retrun:void
  */
