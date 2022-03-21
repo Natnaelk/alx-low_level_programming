@@ -5,6 +5,15 @@
  * Return:size of s
  */
 int _strlen(char *s)
-{
-	return (sizeof(&s));
+{	
+	char b = *s;
+	int i;
+	int leng = 0;
+
+	while (b[i] != '\0')
+	{
+		leng += 1;
+		i++;	
+	}
+	return leng;
 }
