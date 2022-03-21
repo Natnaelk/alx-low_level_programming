@@ -1,4 +1,4 @@
-#inclulde "main.h"
+#include "main.h"
 /**
  * _puts - Entry Point
  * @str : pointer to a string
