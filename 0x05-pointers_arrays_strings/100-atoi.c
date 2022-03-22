@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <ctype.h>
 #include "main.h"
 /**
  * _atoi - A function that converts aschii ot integer
@@ -19,9 +21,9 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-' && (s[i+1] > 47 && s[i+1] < 58))
 		{
-			if (s[i+1] != ' ')
+			if (isspace(s[i+1] == 0)
 			{
-			sign = -1;
+				sign = -1;
 			}
 		}
 		if (s[i] > 47 && s[i] < 58)
