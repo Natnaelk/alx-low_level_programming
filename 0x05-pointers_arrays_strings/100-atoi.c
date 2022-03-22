@@ -6,7 +6,7 @@
  */
 int _atoi(char *s)
 {
-	int result = 0;
+	unsigned int result = 0;
 	int sign = 1;
 	int i = 0;
 
@@ -17,7 +17,10 @@ int _atoi(char *s)
 	}
 	for (; s[i] != '\0'; ++i)
 	{	
-		result = result * 10 + (s[i] - '0');
+		if (s[i] > 47 && s[i] < 58)
+		{	
+			result = result * 10 + (s[i] - '0');
+		}
 	}
 	return (sign * result);
 }
