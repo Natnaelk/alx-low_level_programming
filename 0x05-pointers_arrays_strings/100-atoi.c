@@ -4,7 +4,7 @@
 /**
  * _atoi - A function that converts aschii ot integer
  * @s : the string to be converted to integer
- * Return:integer 
+ * Return:integer
  */
 int _atoi(char *s)
 {
