@@ -21,7 +21,7 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-' && (s[i+1] > 47 && s[i+1] < 58))
 		{
-			if (isspace(s[i+1] == 0)
+			if (isspace(s[i+1]) == 0)
 			sign = -1;
 			
 		}
