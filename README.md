@@ -1,1 +1,1 @@
-alx low level programming using c 
+this is c programming source code for pointers and arrays
