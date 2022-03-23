@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * _strcat - Entry Point
@@ -23,7 +24,10 @@ char *_strcat(char *dest, char *src)
 		k++;
 	}
 	for (j = 0; j < lengths && src[j] != '\0'; j++)
-		dest[lengthd + 1] = src[j];
+		{
+			dest[lengthd + 1] = src[j];
+		}
 	dest[lengthd + 1] = '\0';
+	printf("\n");
 	return (dest);
 }
