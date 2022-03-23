@@ -1,16 +1,25 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _strcat - Entry Point
  * @dest: the destination array
  * @src : the source array
+ * Return:character
  */
 char *_strcat(char *dest, char *src)
 {
-	char *p = dest;
+	int i = 0;
+	int k = 0;
 
-	while ( *p ) ++p;
-	while ( ( *p++ = *src++ ) != '\0' );
-	return (dest);
-
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	while (src[k] != '\0')
+	{
+		dest[i] = src[k];
+		i++;
+		k++;
+	}
+	dest[i] = '\0';
+	return dest;
 }
