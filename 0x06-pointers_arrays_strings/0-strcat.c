@@ -1,9 +1,8 @@
 #include "main.h"
 /**
- * _strncat - Entry Point
+ * _strcat - Entry Point
  * @dest : destination array of string
  * @src : source array of string
- * @n : size of source to be concatenated
  * Return:character
  */
 char *_strcat(char *dest, char *src)
