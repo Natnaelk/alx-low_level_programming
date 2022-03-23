@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _strcat - Entry Point
- * @dest: the destination array
- * @src : the source array
+ * _strncat - Entry Point
+ * @dest : destination array of string
+ * @src : source array of string
+ * @n : size of source to be concatenated
  * Return:character
  */
 char *_strcat(char *dest, char *src)
@@ -14,12 +15,10 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-	while (src[k] != '\0')
+	for (; src[k] != '\0'; k++)
 	{
-		dest[i] = src[k];
-		i++;
-		k++;
+		dest[i++] = src[k];
 	}
 	dest[i] = '\0';
-	return dest;
+	return (dest);
 }
