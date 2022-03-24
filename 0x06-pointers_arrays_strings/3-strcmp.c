@@ -3,7 +3,7 @@
  * _strcmp - a function that compares two strings
  * @s1 : first character
  * @s2 : second character
- * Return: integer
+ * Return:integer
  */
 int _strcmp(char *s1, char *s2)
 {
