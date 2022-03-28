@@ -3,7 +3,7 @@
  * _memcpy - Entry Point
  * @dest : destination character
  * @src : source pointer
- * n: integer size
+ * n : integer size
  * Return:pointer destination
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
