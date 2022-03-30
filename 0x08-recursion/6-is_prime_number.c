@@ -6,10 +6,9 @@
  */
 int primeno(int n, int i)
 {
-	int counter = 0;
 	if (n % i == 0 && i != 1 && i != n)
 	{
-			return (1);
+			return (0);
 	}
 	else if(i <= n)
 	{
@@ -17,7 +16,7 @@ int primeno(int n, int i)
 	}
 	else
 	{
-		return (0);
+		return (1);
 	}
 }
 /**
