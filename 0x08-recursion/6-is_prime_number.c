@@ -20,7 +20,9 @@ int primeno(int n, int i)
 		return (primeno(n, i + 1));
 	}
 	else
-		return (0);	
+	{
+		return (0);
+	}
 }
 /**
  * primeno - Entry Point
