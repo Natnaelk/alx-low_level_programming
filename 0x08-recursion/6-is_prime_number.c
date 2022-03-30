@@ -22,7 +22,7 @@ int primeno(int n, int i)
 }
 
 /**
- * _is_prime_number - Entry Point
+ * is_prime_number - Entry Point
  * @n : character
  * Return:int
  */
