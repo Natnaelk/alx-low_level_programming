@@ -11,7 +11,7 @@ int primeno(int n, int i)
 	{
 		return (1);
 	}
-	else if(i <= n)
+	else if (i <= n)
 	{
 		return (primeno(n, i + 1));
 	}
@@ -22,8 +22,9 @@ int primeno(int n, int i)
 }
 
 /**
- * _is_prime_number- Entry Point
+ * _is_prime_number - Entry Point
  * @n : character
+ * Return:int
  */
 
 int is_prime_number(int n)
