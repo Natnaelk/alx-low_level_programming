@@ -1,24 +1,23 @@
 #include "main.h"
-int square(int a, int i)
-{
-	if (i * i == a)
-	{
-		return (i);
-	}
-	else if (i * i < a)
-	{
-		return (square(a, i + 1));
-	}
-	else
-		return (-1);
-}
-/**
- * _sqrt_recursion - Entry Point
- * @n : character
- * Return:int
- */
+int square(int n, int val);
 int _sqrt_recursion(int n)
 {
-	int i = 1;
-	return square(int n, int i);
+	return (square(n, 1));
+}
+
+/**
+ * square - find square root
+ * @n: int to find square root
+ * @val: square root
+ * Return: int
+ */
+
+int square(int n, int val)
+{
+	if (val * val == n)
+		return (val);
+	else if (val * val < n)
+		return  (square(n, val + 1));
+	else
+		return (-1);
 }
