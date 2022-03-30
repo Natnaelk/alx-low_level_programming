@@ -20,12 +20,12 @@ int palindrome(char *s,int start, int end, int middle)
 		return (0);
 	}
 	else
-		return palindrome(s, start + 1, end - 1, middle)
+		return palindrome(s, start + 1, end - 1, middle);
 }
 int is_palindrome(char *s)
 {
 	int len;
 
 	len = length(s);
-	return palindrome(s, 0, length - 1, length % 2);
+	return palindrome(s, 0, len - 1, len % 2);
 }
