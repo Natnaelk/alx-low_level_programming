@@ -9,7 +9,7 @@ int length(char *a)
 	}
 	return (len);
 }
-int palindrome(*s,int start, int end, int middle)
+int palindrome(char *s,int start, int end, int middle)
 {
 	if ((s[start] == s[end] && middle != 0) || (s[start] == s[end + 1] && middle == 0))
 	{
@@ -27,5 +27,5 @@ int is_palindrome(char *s)
 	int len;
 
 	len = length(s);
-	return palindrome(*s, 0, length - 1, length % 2);
+	return palindrome(s, 0, length - 1, length % 2);
 }
