@@ -7,13 +7,9 @@
 int primeno(int n, int i)
 {
 	int counter = 0;
-	if (n % i == 0 && i <= n)
+	if (n % i == 0 && i != 1 && i != n)
 	{
-		counter++;
-		if (counter <= 2)
-		{
 			return (1);
-		}
 	}
 	else if(i <= n)
 	{
