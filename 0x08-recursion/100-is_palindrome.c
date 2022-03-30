@@ -20,7 +20,7 @@ int palindrome(char *s,int start, int end, int middle)
 		return (0);
 	}
 	else
-		return palindrome(*s, start + 1, end - 1, middle)
+		return palindrome(s, start + 1, end - 1, middle)
 }
 int is_palindrome(char *s)
 {
