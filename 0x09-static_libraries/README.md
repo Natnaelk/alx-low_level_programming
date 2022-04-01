@@ -1,1 +1,1 @@
-this is a topic about static library
+ALX static lib
