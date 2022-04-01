@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * main - Entry Point
- * @argc - argument counter
- * @argv - pointer to an array of pointer
+ * @argc : argument counter
+ * @argv : pointer to an array of pointer
  * Return:integer
  */
 int main(int argc, char *argv[])
