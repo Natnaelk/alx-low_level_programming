@@ -1,5 +1,6 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
+
 /**
  * *_memset - fills memory with a constant byte.
  * @s: pointer to put the constant
@@ -19,18 +20,25 @@ return (ptr);
 }
 
 /**
- * _calloc - a function that acts as calloc built in function
- * @nmemb : no of elements or members
- * @size : size of the array
+ * *_calloc - allocates memory for an array, using malloc
+ * @nmemb: array length
+ * @size: size of each element
+ * Return: pointer
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int length = nmemb * size;
-	unsigned int i = 0;
-	void *p = malloc(length);
+void *m;
 
-	if (p == 0 || nmemb == 0 || size == 0)
-		return (NULL);
-	_memset(m, 0, length);
-	return (p);
+if (size == 0 || nmemb == 0)
+	return (NULL);
+
+m = malloc(nmemb * size);
+
+if (m == 0)
+	return (NULL);
+
+_memset(m, 0, nmemb * size);
+
+return (m);
 }
